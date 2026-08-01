@@ -1,7 +1,26 @@
 aid: podfund
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/podfund.png
 name: Podfund
-description: Podfund is a company surfaced as a portfolio company of bloomberg-beta and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Podfund provides startup and growth capital to podcast creators and audio-driven
+  media companies, typically investing $25,000 to $150,000 based on stage, track
+  record, traction, and revenue. Operated by TechNexus Venture Collaborative, which
+  has backed 600+ startups since 2007, Podfund pairs funding with business planning,
+  a peer community, mentor matching, a growth toolkit, and partner offers. It was
+  surfaced as a portfolio company of Bloomberg Beta and added to the API Evangelist
+  network. Podfund publishes no public API, developer portal, or SDKs; this profile
+  captures its identity and web presence for network discovery.
 url: https://raw.githubusercontent.com/api-evangelist/podfund/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Venture Capital
+- Podcasting
+- Media
+- Funding
+- Investment
+- Audio
+- Creators
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +47,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/podfund-domain-security.yml
 - type: Website
   url: https://pod.fund/
+- type: Blog
+  url: https://medium.com/podfund
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
